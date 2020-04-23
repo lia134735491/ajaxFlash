@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="vue.js"></script>
 </head>
 <body>
+    <div id="app">
+        <!-- <input type="radio" v-model="select">
+        <input type="text" v-model="select">
+        <label>{{test}}</label>
+        <hr></hr>
+        <input type="checkbox">
+        <label>复选框1</label>
+        <input type="checkbox">
+        <label>复选框2</label>
+        <hr>
+        <input type="txt" v-model="aa" value="你是傻逼吗">
+        <hr>
+        <textarea v-model="aa">沙雕们</textarea>
+        <hr>
+        <input type="txt" placeholder="蠢逼们">
+        <hr>
+        <input type="txt" > -->
+        <h4>单选按钮v-model和value的组合使用</h4>
+        <input type="radio" v-model="aa" value="html" id="html" :checked="checked">
+        <label>html</label>
+        <input type="radio" v-model="aa" value="js" id="js">
+        <label>js</label>
+        <input type="radio" v-model="aa" value="css" id="css">
+        <label>css</label>
+        <p>选择的是：{{aa}}</p>
+    </div>
+    <script>
+        var vm = new Vue({
+            el:"#app",
+            data:{
+                select:false,
+                test:222,
+                aa:"哎呀勒",
+                checked:false,
+            }
+        })
+    </script>
     
 </body>
+
 </html>
